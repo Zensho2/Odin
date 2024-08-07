@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,300&display=swap');
+@import url('https://fonts.google.com/specimen/Cantarell?category=Sans+Serif&slant=6');
+//colors
+//01
+$midgray1: #50595c;
+$lightgray1: #687377;
+$darkgray1: #383f41;
+$whitegray1: #e6e6e6;
+$othergray1: #818d91;
+$white1 : #ffffff;
+
+//setup
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    font-size: large;
+    color:$darkgray1;
+    letter-spacing: 1.8px;
+    text-align:justify;
+}
+* {
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+} 
+
+a, a:link, a:hover, a:visited, a:active {
+    text-decoration:none; 
+    cursor:pointer;  
+}   
+
+p{
+    color:$whitegray1;
+    padding:2%;
+    text-align: center;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:1%;
+    overflow: hidden;
+    background-color:$othergray1;
+    opacity: 0.9;
+    width:100vw;
+    height: 7vh;
+    &:hover{
+        border: bottom width 5px;
+        border-bottom-color: #818d91;
+        box-shadow:0px 2px 5px 1px $whitegray1;
+    }
+    .logo{
+        padding:1%;
+        margin:10px;
+        img{
+            max-width: 30%;
+        }
+    }
+    .menu{
+        padding:2%;
+        padding-right: 8%;
+        align-items:center;
+        display: flex;
+        flex-direction: row;
+        .link{
+            padding:2%;
+            text-align:center;
+            margin:10px;
+            color:#ffffff;
+            &:hover{
+                font-size:105%;
+                text-shadow: #50595c;
+                cursor:pointer;
+            }
+        }
+    }
+}
+h1{
+    size:130%;
+    text-align:center;
+    color: $whitegray1;
+}
+.A1{
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    padding:2%;
+    background-color: #687377;
+    align-items: center;
+    &A{
+        padding:inherit;
+        margin:inherit;
+    }
+
+    &B{
+        text-align: center;
+        padding:inherit;
+        margin: inherit;
+        
+        &B{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:inherit;
+        margin:inherit;
+        text-align: center;
+            &2{
+                width: 30vw;
+                border:2px;
+                box-shadow:1px 0px 5px 3px;
+                margin: 2vw;
+                &:hover{
+                    box-shadow: 3px 0px 5px 5px;
+                }
+                h3 {
+                    position: absolute;
+                    transform: translate(10vw, 10vh);
+                    font-size: 120%;
+                    color:$whitegray1;
+                  }
+                  
+                img { 
+                    width: 100%;
+                    height: auto;
+                    opacity: 0.3;
+                  }
+            }  
+        } 
+    }
+}
+
+.recipe{
+    margin-top: 20px;
+            h1{
+            color: #ffffff;
+            padding: 5%;
+            margin: 25px;
+            text-shadow: 3px 2px 5px $darkgray1;
+        }
+    &_element1{
+        max-width:100vw;
+        max-height: 25vh;
+        &friskies{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/Odin/odin-recipes/recipes/friskies2.png) ;
+        }
+        &tuna{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/Odin/odin-recipes/recipes/tuna2.png) ;
+        }
+        &catnip{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(/Odin/odin-recipes/recipes/catnip2.png) ;
+        }
+
+    }
+
+    &_element2{
+        max-width: 40vw;
+        background-color: $lightgray1;
+        color: $white1;
+        border: 2px solid $darkgray1;
+        border-radius: 10px;
+        padding: 2%;
+        margin: 20px;
+        margin-left: 20vw;
+    }
+
+    &_element3{
+        max-width: 100vw;
+        background-color: white;
+        border: 2px solid $darkgray1;
+        padding: 2%;
+        
+    }
+    
+}
+
+.back{
+    padding: 2%;
+    margin: 10px;
+    max-width: 20vw;
+    border: 4px solid $darkgray1;
+    border-radius: 10px;
+    background-color: $midgray1;
+    color: #ffffff;
+    text-align: center;
+}
+
